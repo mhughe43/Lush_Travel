@@ -1,0 +1,53 @@
+html{
+    height:100%;
+}
+.bg {
+    
+    background-image: linear-gradient(-60deg, #F0E2D0 50%, #578583 50%);
+    bottom:0;
+    left:-50%;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+
+  .destination-container{
+      display: flex;
+      flex-wrap: wrap;
+      flex: content;
+      
+  }
+
+  .destination-card{
+      text-align: center;
+      width: 30%;
+      height: 26em;
+      font-family: 'Roboto Condensed', sans-serif;
+      background: #BC6857;
+      margin-left: 2.5%;
+      margin-top: 2.5%;
+      padding: 3px;
+      border-radius: 10px; 
+  }
+
+  h4{
+      text-align: left;
+  }
+  .text{
+      opacity: none;
+  }
+
+  .destination-profile{
+    height: 45%;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: #DE7D89 4px 4px 0 0,#000 4px 4px 0 1px;
+    text-align: center;
+    opacity: none;
+  }
+
+  .destination-profile:hover{
+    filter: brightness(150%); 
+  }

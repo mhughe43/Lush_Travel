@@ -1,21 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { FlightsPageComponent } from './flights-page.component';
 
-import { HomePageComponent } from './home-page.component';
-
-describe('HomePageComponent', () => {
-  let component: HomePageComponent;
-  let fixture: ComponentFixture<HomePageComponent>;
+describe('FlightsPageComponent', () => {
+  let component: FlightsPageComponent;
+  let fixture: ComponentFixture<FlightsPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomePageComponent ]
+      declarations: [ FlightsPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomePageComponent);
+    fixture = TestBed.createComponent(FlightsPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

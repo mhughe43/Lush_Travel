@@ -1,0 +1,60 @@
+html{
+    height:100%;
+}
+.bg {
+    
+    background-image: linear-gradient(-60deg, #F0E2D0 50%, #BC6857 50%);
+    bottom:0;
+    left:-50%;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+
+  #flight-container{
+      height: 10%;
+      position: absolute;
+      left: 30%;   
+  }
+
+  #passengar-details{
+    align-content: center;
+    
+}
+
+select{
+    margin-left: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 5px;
+    border-top: 3px solid #578583;
+    border-left: 3px solid #578583;
+    border-bottom: 3px solid #89AAA8;
+    border-right: 3px solid #89AAA8;
+}
+
+#trip-type{
+    margin-left: 15px;
+}
+
+#flight-details{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+input{
+    padding: 15px;
+    width: 45%;
+    height: 15%;
+    margin: 7px;
+    font-size: medium;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 5px;
+    border-top: 5px solid #578583;
+    border-left: 5px solid #578583;
+    border-bottom: 5px solid #89AAA8;
+    border-right: 5px solid #89AAA8;
+    
+}

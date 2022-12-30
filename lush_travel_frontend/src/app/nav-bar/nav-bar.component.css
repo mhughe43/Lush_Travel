@@ -37,7 +37,19 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #fff;
     
-   
+}
+
+.nav-buttons{
+  color: #fff;
+  text-decoration: none;
+ 
+}
+
+.logo-link{
+  text-decoration: none;
+  color: #DE7D89;
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
 }
 
 

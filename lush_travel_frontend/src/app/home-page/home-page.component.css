@@ -124,11 +124,31 @@ html {
     box-shadow: #578583 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
   }
+
+  a{
+      text-decoration: none;
+      color: #fff;
+  }
   
   @media (min-width: 768px) {
     .button-50 {
       padding: 12px 50px;
     }
+  }
+
+  .reviews{
+      position: relative;
+      top: 35em;
+      display: flex;
+      text-align: center;
+      
+  }
+
+  h3{
+      box-shadow: 2px 5px #DC9FA1 ;
+      background-color: #BC6857;
+      color: #fff;
+
   }
 
  
