@@ -24,11 +24,15 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DestinationsPageComponent } from './destinations-page/destinations-page.component';
 import { FlightsPageComponent } from './flights-page/flights-page.component';
+import { HotelPageComponent } from './hotel-page/hotel-page.component';
+import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'destinations', component: DestinationsPageComponent },
-  { path: 'flights', component: FlightsPageComponent }
+  { path: 'flights', component: FlightsPageComponent },
+  { path: 'hotels', component: HotelPageComponent },
+  { path: 'about-us', component: AboutUsPageComponent }
 ];
 
 @NgModule({
@@ -37,7 +41,9 @@ const routes: Routes = [
     HomePageComponent,
     NavBarComponent,
     DestinationsPageComponent,
-    FlightsPageComponent
+    FlightsPageComponent,
+    HotelPageComponent,
+    AboutUsPageComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes), MdbAccordionModule, MdbCarouselModule, MdbCheckboxModule, MdbCollapseModule, MdbDropdownModule, MdbFormsModule, MdbModalModule, MdbPopoverModule, MdbRadioModule, MdbRangeModule, MdbRippleModule, MdbScrollspyModule, MdbTabsModule, MdbTooltipModule, MdbValidationModule, BrowserAnimationsModule
