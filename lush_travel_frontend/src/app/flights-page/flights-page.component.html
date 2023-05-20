@@ -1,9 +1,59 @@
 <app-nav-bar></app-nav-bar>
 <div class="bg"></div>
 
+<h1 class="title">Search for Flights</h1>
+<div class="">
+<form id="" (ngSubmit)="searchFlights()">
+<div class="flight-details">
+    <div class="airports"> 
+        <input class="" type="text" [(ngModel)]="departureAirport" name="departureAirport" placeholder="Departure Airport (ex: LAX)"><br>
+        <input class="" type="text" [(ngModel)]="destinationAirport" name="destinationAirport" placeholder="Destination Airport (ex: JFK)"><br>
+    </div>
+  
+
+  <div class="dates">
+        <input class="" type="date" [(ngModel)]="departureDate" name="departureDate"><br>
+
+        <input class="" type="date" [(ngModel)]="arrivalDate" name="arrivalDate"><br>
+  </div >
+
+  <div class="pricing">
+        <label  class="">$</label>
+        <input class="details" type="number" [(ngModel)]="minPrice" name="minPrice" placeholder="Minimum Price"><br>
+
+  <label  class="">$</label>
+  <input class="" type="number" [(ngModel)]="maxPrice" name="maxPrice" placeholder="Maximum Price"><br>
+  
+  </div>
+
+  <button type="submit" class="button-50">Search</button>
+</div>
+</form>
+</div>
+
+
+<h2 class="title">Results</h2>
+
+<div *ngIf="filteredFlights.length === 0">No flights found</div>
+
+<div *ngFor="let flight of filteredFlights" class="flight-card" id="flight-container">
+  <div class="flight-details" >
+    <h3>{{ flight.airline }} - {{ flight.flightNumber }}</h3>
+    <h4>From {{ flight.departureAirport }} to {{ flight.destinationAirport }}</h4>
+    <p>Departure date: {{ flight.departureDate }}</p>
+    <p>Arrival date: {{ flight.arrivalDate }}</p>
+    <p>Departure time: {{ flight.departureTime }}</p>
+    <p>Arrival time: {{ flight.arrivalTime }}</p>
+    <p>Price: ${{ flight.price }}</p>
+  </div>
+</div>
+
+
+<!-- <div class="bg"></div>
+
 <div id="flight-container">
-    <div id="passenger-details">
-        <!-- Trip Type -->
+    <div id="passenger-details"> -->
+        <!-- Trip Type
         <select id="trip-type">
             <option value="one-way">One-Way</option>
             <option value="round-trip">Round Trip</option>
@@ -21,12 +71,32 @@
             <option value="first">First</option>
         </select>
     </div>
-    <div id="flight-details">
-        <input type="text" placeholder="Home Airport">
-        <input type="text" placeholder="Destination Airport">
-        <input type="date" name="" id="">
-        <input type="date" name="" id="">
-    </div>
+    <form (ngSubmit)="searchFlights()">
+  <div class="form-group">
+    <label for="departureAirport">Departure Airport:</label>
+    <input type="text" class="form-control" id="departureAirport" [(ngModel)]="departureAirport" name="departureAirport">
+  </div>
+  <div class="form-group">
+    <label for="arrivalAirport">Arrival Airport:</label>
+    <input type="text" class="form-control" id="arrivalAirport" [(ngModel)]="arrivalAirport" name="arrivalAirport">
+  </div>
+  <div class="form-group">
+    <label for="departureDate">Departure Date:</label>
+    <input type="date" class="form-control" id="departureDate" [(ngModel)]="departureDate" name="departureDate">
+  </div>
+  <div class="form-group">
+    <label for="numPassengers">Number of Passengers:</label>
+    <input type="number" class="form-control" id="numPassengers" [(ngModel)]="numPassengers" name="numPassengers">
+  </div>
+  <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<ul>
+    <li *ngFor="let flight of flights">
+      
+    </li>
+  </ul>
+   
     <button class="button-50">Go</button>
     <div class="flight-container">
         <div class="flight-card">
@@ -108,4 +178,4 @@
             
     
 
-</div>
+</div> -->

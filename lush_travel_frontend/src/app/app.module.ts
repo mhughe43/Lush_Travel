@@ -26,6 +26,8 @@ import { DestinationsPageComponent } from './destinations-page/destinations-page
 import { FlightsPageComponent } from './flights-page/flights-page.component';
 import { HotelPageComponent } from './hotel-page/hotel-page.component';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -46,7 +48,7 @@ const routes: Routes = [
     AboutUsPageComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes), MdbAccordionModule, MdbCarouselModule, MdbCheckboxModule, MdbCollapseModule, MdbDropdownModule, MdbFormsModule, MdbModalModule, MdbPopoverModule, MdbRadioModule, MdbRangeModule, MdbRippleModule, MdbScrollspyModule, MdbTabsModule, MdbTooltipModule, MdbValidationModule, BrowserAnimationsModule
+    BrowserModule, RouterModule.forRoot(routes), ReactiveFormsModule, MdbAccordionModule, MdbCarouselModule, MdbCheckboxModule, MdbCollapseModule, MdbDropdownModule, MdbFormsModule, MdbModalModule, MdbPopoverModule, MdbRadioModule, MdbRangeModule, MdbRippleModule, MdbScrollspyModule, MdbTabsModule, MdbTooltipModule, MdbValidationModule, BrowserAnimationsModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

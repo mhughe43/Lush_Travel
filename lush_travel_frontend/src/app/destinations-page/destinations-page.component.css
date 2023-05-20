@@ -22,7 +22,7 @@ html{
   .destination-card{
       text-align: center;
       width: 30%;
-      height: 26em;
+      height: 30em;
       font-family: 'Roboto Condensed', sans-serif;
       background: #BC6857;
       margin-left: 2.5%;
@@ -34,6 +34,7 @@ html{
 
   h4{
       text-align: left;
+      margin: 15px;
   }
   .text{
       opacity: none;
@@ -43,6 +44,7 @@ html{
     height: 45%;
     width: 50%;
     border-radius: 5px;
+    margin: 15px;
     border: 1px solid black;
     box-shadow: #DE7D89 4px 4px 0 0,#000 4px 4px 0 1px;
     text-align: center;
